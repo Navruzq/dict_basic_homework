@@ -14,9 +14,6 @@ def count_all(txt):
             a+=1
         elif i.isalpha():
             b+=1
-    f={}
-    
-    f["DIGITS"]=b
-    f['LETTERS']=a
-    return f
+  
+    return {'LETTERS':b,"DIGITS":a}
 print(count_all("Hello 777"))
