@@ -7,4 +7,16 @@ def count_all(txt):
     Returns:
         dict: dictionary with letters and digits
     """
-    return
+    a=0
+    b=0
+    for i in txt:
+        if i.isdigit():
+            a+=1
+        else:
+            b+=1
+    f={}
+    f['LETTERS']=a
+    f["DIGITS"]=b
+    return f
+print(count_all("Hello 777"))
+#${ "LETTERS":  10, "DIGITS": 0 }
