@@ -1,7 +1,11 @@
 def last_item():
     """
-    Given a dictionary, Return last item value.
+    Given a dictionary, Return first item value.
     """
     data = {'a': 1, 'b': 2}
-    return data['a']
+    
+    k,v=data.popitem()
+    return v
 print(last_item())
+
+ 
